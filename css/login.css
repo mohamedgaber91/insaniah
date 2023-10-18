@@ -1,0 +1,97 @@
+.login-content {
+  width: 100%;
+  background-image: url(../assets/002\ copy.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+.login-content .login-form {
+  position: absolute;
+  width: 400px;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+.login-content .login-form h3 {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.login-content .login-form p {
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 10px;
+  color: var(--dark-color);
+  margin-bottom: -5px;
+}
+.login-content .login-form form {
+  margin-top: 30px;
+}
+.login-content .login-form .form-group {
+  margin-top: 15px;
+  width: 100%;
+  display: inline-block;
+}
+.login-content .login-form .form-group label {
+  display: block;
+}
+.login-content .login-form .form-group input {
+  width: 100%;
+  padding: 15px;
+}
+.login-content .login-form .forgetPassword {
+  text-align: left;
+  position: absolute;
+  right: 0;
+  color: var(--main-color);
+  margin-top: 10;
+}
+.login-content .login-form .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.login-content .login-form .buttons button {
+  border: 0;
+  outline: none;
+  width: 49%;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+}
+.login-content .login-form .buttons .Log-in {
+  background-color: var(--main-color);
+  color: white;
+}
+.login-content .login-form .buttons .sign-up {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 0.5px solid black;
+}
+.login-content .login-form .buttons .sign-up a {
+  color: black;
+}
+.login-content .login-form .links {
+  position: absolute;
+  bottom: -200px;
+}
+
+.login-content .login-form .links a {
+  color: var(--main-color);
+  margin: 15px;
+  transition: .3s;
+}
+.login-content .login-form .links a:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 821px) {
+.login-content {
+    display: flex;
+    justify-content: center;
+}
+  .login-content .login-form {
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+  }
+}

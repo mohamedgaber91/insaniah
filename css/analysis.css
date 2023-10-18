@@ -1,0 +1,193 @@
+
+
+.analysis {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  background-color: #d7d7d7;
+  background-image: url(../assets/icons/Group\ 2609.png);
+  position: relative;
+  background-position: center;
+  padding: 40px 0;
+  background-repeat: repeat;
+}
+.analysis::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+}
+.analysis-container {
+  width: 100%;
+  background-color: #d7d7d7;
+  background-image: url(../assets/icons/Group\ 2609.png);
+  position: relative;
+  background-position: center;
+  background-repeat: repeat;
+}
+.analysis-.analysis-container {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+}
+.analysis .leftSide,
+.analysis .rightSide {
+  width: 55%;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.analysis .leftSide p,
+.analysis .rightSide p {
+  text-align: center;
+}
+.analysis .dash {
+  display: block;
+  width: 20px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: rgb(139, 143, 139);
+  margin: 10px auto;
+}
+.analysis div .left-left {
+  width: 65%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.analysis div .left-left div {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin: 12px auto;
+  text-align: center;
+  padding: 10px;
+  transition: .3s;
+}
+.analysis div .left-left div:hover {
+  background-color: #583f20;
+  color: white;
+}
+
+
+.analysis div .left-left .colored {
+  background-color: #fff0de;
+  color: var(--main-color);
+}
+.analysis div .left-left button {
+  border: 0;
+  display: block;
+  outline: none;
+  border-radius: 15px;
+  margin: auto;
+  width: 95%;
+  background-color: var(--main-color);
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.analysis div .left-left .active {
+  background-color: #583f20;
+  color: white;
+}
+.analysis div .right-right {
+  width: 30%;
+  height: 80%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.analysis .right-right .small-sideCards .sideCard {
+  width: 90px;
+  height: 190px;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -7px 8px 11px 13px rgba(119, 118, 118, 0.1);
+  margin-right: 100px;
+}
+.analysis .right-right .small-sideCards .sideCard span {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fdecd8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.analysis .right-right .small-sideCards .sideCard span svg {
+  width: 20px;
+  height: 20px;
+}
+
+.analysis .right-right .small-sideCards .sideCard p {
+  rotate: -90deg;
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 55px;
+}
+.analysis .right-right .small-sideCards .rightSide-active {
+  background-color: var(--main-color);
+}
+.analysis .right-right .small-sideCards .rightSide-active p {
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .analysis div .right-right {
+    display: none;
+  }
+}
+@media (max-width: 716px) {
+  .analysis {
+    width: 100%;
+  }
+  .analysis .leftSide,
+  .analysis .rightSide {
+    width: 90%;
+  }
+.analysis div .left-left div {
+  margin-top: 15px;
+}
+  .analysis div .left-left {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .analysis-container .analysis {
+    flex-direction: column;
+  }
+  .analysis-container .analysis .left-side,
+  .analysis-container .analysis .right-side {
+    width: 500px;
+  }
+}

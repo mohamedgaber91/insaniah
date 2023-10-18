@@ -1,0 +1,208 @@
+
+.success-payment {
+  height: 100vh;
+  width: 100%;
+  background-color: #d7d7d7;
+  background-image: url(../assets/icons/Group\ 2609.png);
+  position: relative;
+  background-position: center;
+  background-repeat: repeat;
+  padding-bottom: 30px;
+}
+.success-payment::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+}
+.success-payment .content {
+  padding: 40px 0;
+  margin: auto;
+}
+.success-payment .content p {
+  font-size: 10px;
+}
+.success-payment .content .card {
+  width: 70%;
+  min-height: 400px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 0;
+  /* paddi */
+}
+.success-payment .card .header {
+  width: 100%;
+  height: 50px;
+  background-color: #e3cdb5;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+}
+
+.success-payment .card .header .header-left {
+  background-color: var(--main-color);
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 15px;
+}
+
+.success-payment .card .header span {
+  display: flex;
+  width: 15%;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 5px;
+}
+.success-payment .card .header span p {
+  font-size: 20px;
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+.success-payment .card .content span {
+  width: 80px;
+  height: 80px;
+  border: 1.5px solid var(--main-color);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: -10px;
+}
+.success-payment .card .content span i {
+  font-size: 50px;
+  color: var(--main-color);
+  font-weight: 800;
+}
+.success-payment .card .content p {
+  font-size: 30px;
+  text-align: center;
+  color: var(--dark-color);
+}
+.success-payment .card .underline {
+  width: 30%;
+  height: 2px;
+  background-color: #c7c3c3;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.success-payment .card .thanks {
+  font-size: 25px;
+  color: var(--dark-color);
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+.success-payment .card .date {
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+.success-payment .card button {
+  width: 30%;
+  border: 0;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.success-payment .card .footer {
+  width: 100%;
+  bottom: 0;
+  height: 20px;
+  background-color: var(--main-color);
+  margin-top: 40px;
+}
+@media (max-width: 805px) {
+  .sm-container {
+    width: 95%;
+    margin: auto;
+  }
+  .success-payment .content .card {
+    width: 95%;
+  }
+  .success-payment .content #path {
+    display: none;
+  }
+  .success-payment .card .header {
+    height: 40px;
+  }
+  .success-payment .card .header .header-left {
+    font-size: 12px;
+    width: 60px;
+  }
+  .success-payment .card .header span p {
+    font-size: 15px;
+  }
+  .success-payment .card .content span {
+    width: 60px;
+    height: 60px;
+  }
+  .success-payment .card .content span i {
+    font-size: 35px;
+  }
+  .success-payment .card .content p {
+    font-size: 25px;
+  }
+  .success-payment .card .underline {
+    top: 48%;
+  }
+  .success-payment .card .thanks {
+    font-size: 18px;
+  }
+  .success-payment .card button {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 329px) {
+  .success-payment .card .header .header-left {
+    font-size: 12px;
+    width: 60px;
+  }
+
+  .success-payment .card .header span p {
+    font-size: 12px;
+  }
+  .success-payment .card .content span {
+    width: 40px;
+    height: 40px;
+  }
+  .success-payment .card .content span i {
+    font-size: 20px;
+  }
+  .success-payment .card .content p {
+    font-size: 18px;
+  }
+  .success-payment .card .underline {
+    top: 48%;
+  }
+  .success-payment .card .thanks {
+    font-size: 14px;
+  }
+
+  .success-payment .card button {
+    font-size: 10px;
+  }
+}

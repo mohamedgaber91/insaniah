@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --card-color: #e3cdb5;
+}
+.profile {
+  position: relative;
+  background-color: #d7d7d7;
+  background-image: url(../assets/icons/Group\ 2609.png);
+  position: relative;
+  background-position: center;
+  background-repeat: repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.profile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+}
+.profile-container {
+  margin-left: 3%;
+  margin-right: 3%;
+  position: relative;
+}
+.profile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 23% 67% 10%;
+}
+.sidebar {
+  background-color: #f4f4f4;
+  margin-top: 124px;
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+  width: 295px;
+  height: 720px;
+  padding: 20px;
+  padding-bottom: 67px;
+  text-align: center;
+  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.filter-group .filter-element {
+  margin-bottom: 14px;
+}
+
+.filter-group h3 {
+  background-color: #dcb485e0;
+  padding: 7px;
+  margin-bottom: 27px;
+  box-shadow: 0px 1px 1px #c08181;
+}
+h2,
+h3 {
+  font-size: 16px;
+}
+
+.filter-group {
+  margin-top: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 5px;
+  margin-bottom: 19px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #e3a051;
+  outline: none;
+  transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  /* top: 2px; */
+}
+input[type="checkbox"] {
+  --webkit-appearance: none;
+
+  background: #d3d3d3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--main-color);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: var(--main-color);
+}
+#price-output {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.success-payment {
+  width: 100%;
+}
+.success-payment .content {
+  margin-top: 40px;
+}
+.profile-cards-content {
+  margin-bottom: 50px;
+  margin-top: 102px;
+}
+.success-payment .content p {
+}
+.success-payment .card {
+  margin: auto;
+  width: 80%;
+  margin-top: 55px;
+  text-align: center;
+  border-radius: 0;
+}
+.profil-card-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.success-payment .card .header {
+  width: 100%;
+  height: 40px;
+  /* padding: 5px; */
+  background-color: #e3cdb5;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+}
+.success-payment .card .header p {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.success-payment .card .header > p {
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 8px;
+  letter-spacing: 2px;
+}
+.success-payment .card-1 .header > p {
+  background-color: var(--main-color);
+}
+.success-payment .card-2 .header > p {
+  background-color: #c44830;
+}
+.success-payment .card-3 .header > p {
+  background-color: #589080;
+}
+.success-payment .card-4 .header > p {
+  background-color: #00b4ee;
+}
+.success-payment .card-5 .header > p {
+  background-color: #286f5c;
+}
+.success-payment .card-6 .header > p {
+  background-color: var(--main-color);
+}
+
+.success-payment .card .header span {
+  display: flex;
+  padding-top: 2px;
+  justify-content: center;
+  color: white;
+}
+.success-payment .card .header span i {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+
+.success-payment .card .content {
+}
+.success-payment .card .content span {
+  width: 80px;
+  height: 80px;
+  border: 1.5px solid var(--main-color);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: -10px;
+}
+.success-payment .card .content span i {
+  font-size: 50px;
+  color: var(--main-color);
+  font-weight: 800;
+}
+.success-payment .card .content p {
+  font-size: 30px;
+  text-align: center;
+  color: var(--dark-color);
+}
+.success-payment .card .underline {
+  width: 90%;
+  height: 1px;
+  background-color: #c7c3c3;
+  margin: auto;
+  margin-bottom: 5px;
+  display: block;
+  margin-top: 16px;
+}
+
+.success-payment .card button,
+.filter-icon button {
+  width: 100%;
+  border: 0;
+  outline: none;
+
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.success-payment .card-1 button {
+  background-color: #05be8b;
+}
+.success-payment .card-2 button {
+  background-color: #c44830;
+}
+.success-payment .card-3 button {
+  background-color: #589080;
+}
+.success-payment .card-4 button {
+  background-color: #00b4ee;
+}
+.success-payment .card-5 button {
+  background-color: #286f5c;
+}
+.success-payment .card-6 button,
+.filter-icon button {
+  background-color: var(--main-color);
+}
+.filter-icon {
+  margin-top: 50px;
+}
+
+.success-payment .card .footer {
+  width: 100%;
+  margin-top: 10px;
+  text-align: initial;
+  padding: 9px;
+  bottom: 0;
+  padding-left: 20px;
+  background-color: #e3a05182;
+}
+.filter-icon {
+  display: none;
+}
+
+.success-payment .card .footer i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #00000085;
+}
+@media (max-width: 1100px) {
+  .profile-content {
+    display: block;
+  }
+  .profile-cards-content {
+    display: block;
+  }
+  .filter-icon {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+  .profile-container .sideprofile-cards {
+    display: none;
+  }
+  .success-payment .card {
+    width: 90%;
+  }
+
+  .profil-card-content {
+    display: block;
+  }
+  .card .profil-card-content .content-div-profile .one.skill {
+    display: block;
+  }
+  .card .profil-card-content .content-div-profile .one.skill h3 {
+    text-align: initial;
+  }
+  .card .profil-card-content .content-div-profile .one.skill .box {
+    margin-top: 30px;
+  }
+  .card .profil-card-content .content-div-profile .one.skill h4 {
+    font-size: 11px;
+
+    margin-left: 0px;
+  }
+  .card .profile-buy {
+    display: block;
+  }
+  .card .profile-buy .done {
+    padding: 4px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+  }
+  .success-payment .path {
+    display: none;
+  }
+}
+.img-div-profile {
+  width: 100%;
+  height: 100%;
+}
+img.profile-img {
+  width: 110px;
+  width: 100%;
+  height: 80%;
+}
+p.profile-heading {
+  margin-top: 6px;
+  font-size: 26px;
+  font-weight: 400;
+}
+span.price {
+  font-size: 30px;
+  margin-top: -10px;
+  color: var(--main-color);
+  font-weight: 600;
+  margin-bottom: 22px;
+  display: inline;
+}
+span.price sup {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+.profile-dimentions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.dimention img {
+  width: 50px;
+}
+.dimention h3 {
+  margin-bottom: 15px;
+  color: #000000a6;
+}
+.dimention h2 {
+  color: var(--main-color);
+}
+.dimention h2 sup {
+  color: rgba(0, 0, 0, 0.5);
+}
+.select {
+  border: 1px solid black;
+  padding: 12px;
+  width: 90%;
+  margin: auto;
+}
+.profile-buy {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 9px;
+}
+.done {
+  width: 100%;
+  background-color: #e3c39f;
+  padding-top: 20px;
+  text-align: initial;
+  padding-left: 30px;
+  color: #0000008a;
+}
+.done button {
+  width: 100%;
+}
+.cart-icon {
+  background-color: #b6b6a9;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 20px;
+  align-items: baseline;
+  text-transform: capitalize;
+}
+.cart-icon i {
+  color: white;
+  font-size: 25px;
+}
+.sideprofile-cards {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.sideprofile-cards .sideCard {
+  width: 100px;
+  height: 273px;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 1px 0px 2px rgba(119, 118, 118, 0.1);
+}
+.sideprofile-cards .sideCard span {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #fdecd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideprofile-cards .sideCard p {
+  rotate: -90deg;
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 55px;
+}
+.icon-profile {
+  width: 120px;
+  height: 100;
+  height: 120px;
+  border: 1px solid #00000069;
+  margin: auto;
+  border-radius: 50%;
+}
+.profile-feature{
+  display: flex;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  padding-left: 31px;
+  font-size: 25px;
+  border-bottom: 1px solid #00000073;
+  align-items: center;
+  transition: .3s;
+  color: #00000082;
+  cursor: pointer;
+}
+.profile-feature:hover{
+  background-color: #C6C5BF;
+}
+.feature-icon {
+  margin-right: 29px;
+}
+.feature-icon i {
+}
+.icon-profile i {
+  padding-top: 20px;
+  font-size: 60px;
+  color: #00000069;
+}
+.sidebar h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.sidebar h4 {
+  color: #00000066;
+  font-size: 19px;
+  margin-bottom: 107px;
+}
+.profile-feature h2 {
+}
+.logout {
+  margin-top: 54px;
+}
+.logout button {
+  width: 80%;
+  border: 0;
+  margin: auto;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.skill {
+  display: flex;
+  padding: 20px;
+  padding-left: 30px;
+}
+.one.skill {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 7px;
+  font-size: 20px;
+}
+.skill h3 {
+  font-size: 30px;
+  color: #1c1003a8;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.box i {
+  margin-left: 10px;
+  font-size: 25px;
+  color: #00000082;
+}
+.box h4 {
+  font-size: 18px;
+  padding: 7px;
+  margin-left: 10px;
+  color: #0000008c;
+  text-transform: capitalize;
+}
+.skill p {
+}
+.skill sup {
+  margin-top: 40px;
+  margin-left: 11px;
+  font-size: 20px;
+}
+.skill sub {
+  margin-top: 28px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.content-div-profile .underline {
+  width: 90%;
+  height: 1px;
+  background-color: #c7c3c3;
+  margin: auto;
+  margin-bottom: 5px;
+  position: relative;
+  margin-top: -10px;
+}
+.more {
+  margin: auto;
+  width: 80%;
+  margin-top: 42px;
+  margin-bottom: 120px;
+}
+.more button {
+  width: 100%;
+  border: 0;
+  margin: auto;
+  margin: auto;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.wishlist {
+  margin: auto;
+  width: 80%;
+  margin-bottom: 4px;
+}
+.wishlist button {
+  width: 100%;
+  border: 0;
+  margin: auto;
+  height: 64px;
+  margin: auto;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  text-align: inherit;
+  margin: auto;
+  padding-left: 10px;
+  padding: 10px;
+  font-size: 24px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+.wishlist button sup {
+  background-color: red;
+  font-size: 15px;
+  padding: 1px;
+  padding-left: 9px;
+  padding-right: 10px;
+  border-radius: 50%;
+}

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/g-projects (1).css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Insaniah</title>
+</head>
+<script>
+
+</script>
+
+<body>
+    <header>
+        <div class="xl-container header-content">
+            <div class="login">
+                <a href="index">login</a>
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </div>
+            <div class="languages"><img src="./assets/icons/360_F_112467534_9jaCZZRAEMsIcICc5Az0NSX7RenIAKw9.jpg"
+                    alt="">EN<i class="fa-solid fa-chevron-down"></i>
+                <div class="lang-dropdown">
+                    <a href="#">English</a>
+                    <a href="#">Arabic</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="searchbar">
+        <div class="navbar sm-container">
+            <img src="./assets/icons/Image 3.png" alt="">
+
+            <div class="search-container">
+                <div class="glass-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input class="search-input" type="text" placeholder="Search">
+                <div class="dropdown">
+                    <button class="dropdown-button">Departments</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+                <button class="search-button" type="submit">Search</button>
+            </div>
+            <div id="ICONS" class="icons">
+                <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">3</span>
+                    wishlist
+                </div>
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">5</span>
+                    cart
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header2 -->
+    <div class="header2 flex">
+        <div class="sm-container mainDropDowns flex">
+            <div class="h2-dropdown list1">available countries </a><i class="fa-solid fa-chevron-down"></i>
+                <div id="list1" class="dropdown-content ">
+
+                    <a href="signUp.html">sign up</a>
+                    <a href="index.html">log in</a>
+                    <a href="g-projects.html">projects</a>
+                    <a href="projects.html">projects 2</a>
+                    <a href="portfolio.html">portfolio</a>
+                    <a href="countries.html">countries</a>
+                    <a href="budget.html">budjet</a>
+                    <a href="funds.html">funds</a>
+                    <a href="verifyPayment.html">verifyPayment</a>
+                    <a href="successPayment.html">successfullPayment</a>
+                    <a href="g-projects.html">wishlist</a>
+                    <a href="cart.html">cart</a>
+                    <a href="analysis.html">analysis</a>
+
+                </div>
+            </div>
+            <div class="h2-dropdown list2"><a href="projects.html"> projects</a> <i
+                    class="fa-solid fa-chevron-down"></i>
+                <div id="list2" class="dropdown-content ">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+            <div class="h2-dropdown list3">islamic centers <i class="fa-solid fa-chevron-down"></i>
+                <div id="list3" class="dropdown-content ">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+            <div class="h2-dropdown list4"> health centers <i class="fa-solid fa-chevron-down"></i>
+                <div id="list4" class="dropdown-content ">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+            <div class="h2-dropdown list5">rellef projects <i class="fa-solid fa-chevron-down"></i>
+                <div id="list5" class="dropdown-content ">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+            <div class="h2-dropdown list6">water wells <i class="fa-solid fa-chevron-down"></i>
+                <div id="list6" class="dropdown-content ">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back-ground ">
+        <div class="projects-container back-ground">
+            <div class="projects-content">
+                <div class="sidebar-container  wow bounceInLeft" data-wow-duration="3s" data-wow-delay="1s">
+                    <div class="sidebar " id="sidebar">
+                        <h2>Filter Projects</h2>
+
+
+
+                        <div class="filter-group">
+                            <h3 id="toggle_1" class="toggleBtn">Continents <i class="fa-solid fa-angle-down"></i></h3>
+                            <div class="listOfToggle1" id="listOfToggle1">
+                                <div class="filter-element">
+                                    <input type="checkbox" id="africa" name="africa">
+                                    <label for="africa">Africa</label>
+                                </div>
+                                <div class="filter-element">
+                                    <input type="checkbox" id="asia" name="asia">
+                                    <label for="asia">Asia</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="filter-group">
+                            <h3 id="toggle_2" class="toggleBtn">Countries <i class="fa-solid fa-angle-down"></i></h3>
+                            <div class="listOfToggle1" id="listOfToggle2">
+                                <div class="filter-element">
+                                    <input type="checkbox" id="egypt" name="egypt">
+                                    <label for="egypt">Egypt</label>
+                                </div>
+                                <div class="filter-element">
+                                    <input type="checkbox" id="china" name="china">
+                                    <label for="china">China</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h3 id="toggle_3" class="toggleBtn">Project Sub Category <i
+                                    class="fa-solid fa-angle-down"></i></h3>
+                            <div class="listOfToggle1" id="listOfToggle3">
+                                <div class="filter-element">
+                                    <input type="checkbox" id="wheels" name="wheels">
+                                    <label for="wheels">Mosques</label>
+                                </div>
+                                <div class="filter-element">
+                                    <input type="checkbox" id="building" name="building">
+                                    <label for="building">Normal Wheel</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="filter-group">
+                            <h3 id="toggle_4" class="toggleBtn">Price <i class="fa-solid fa-angle-down"></i></h3>
+                            <div class="listOfToggle1" id="listOfToggle4">
+                                <div class="filter-element">
+                                    <span id="price-output">
+                                        <p>110.75 Qar </p>
+                                        <p> 120.57 Qar</p>
+                                    </span>
+                                    <input type="range" id="price-range" name="price-range" min="11075" max="12057"
+                                        step="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <h3 id="toggle_5" class="toggleBtn">Project Type <i class="fa-solid fa-angle-down"></i></h3>
+                            <div class="listOfToggle1" id="listOfToggle6">
+                                <div class="filter-element">
+                                    <input type="checkbox" id="wheels" name="wheels">
+                                    <label for="wheels">Separated</label>
+                                </div>
+                                <div class="filter-element">
+                                    <input type="checkbox" id="building" name="building">
+                                    <label for="building">Sharing</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="filter-group">
+                            <h3 id="toggle_6" class="toggleBtn">Zakat Type <i class="fa-solid fa-angle-down"></i></h3>
+                            <div class="listOfToggle1" id="listOfToggle7">
+                                <div class="filter-element">
+                                    <input type="checkbox" id="wheels" name="wheels">
+                                    <label for="wheels">Accept Zaka</label>
+                                </div>
+                                <div class="filter-element">
+                                    <input type="checkbox" id="building" name="building">
+                                    <label for="building">Building</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="success-payment">
+                        <p class="path">Home > Projects</p>
+                        <!-- <div class="toggle-button-container">
+                            <button id="toggle-button" class="toggle-button"><i
+                                    class="fa-solid fa-sliders"></i></button>
+                        </div> -->
+                        <div class="cards-content">
+                            <!-- card 1 -->
+                            <div class="card card-1  wow bounceInLeft" data-wow-duration="3s" data-wow-delay="1s">
+                                <div class="header">
+                                    <p>Zakat Bank</p>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <p>Share</p>
+
+                                    </span>
+                                </div>
+                                <div class="img-div-project">
+                                    <img src="./assets/icons/Group 142.png" alt="" srcset="" class="project-img">
+                                </div>
+
+                                <p class="project-heading">Orphanage</p>
+                                <span class="price">300,300 <sup>Qar</sup></span>
+                                <span class="underline"></span>
+                                <div class="project-dimentions">
+                                    <div class="dimention">
+                                        <h3>Syria</h3>
+                                        <img src="./assets/icons/Group 241.png" alt="" srcset="">
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Space</h3>
+                                        <h2>100 <sup>m</sup></h2>
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Beneficiaries</h3>
+                                        <h2>1000</span></h2>
+                                    </div>
+
+                                </div>
+                                <div class="select">select the value</div>
+                                <div class="project-buy">
+                                    <div class="cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="done">
+                                        <button>Donation</button>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div class="card card-2  wow bounceInUp" data-wow-duration="3s" data-wow-delay="1s">
+                                <div class="header">
+                                    <p>Zakat Bank</p>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <p>Share</p>
+
+                                    </span>
+                                </div>
+                                <div class="img-div-project">
+                                    <img src="./assets/icons/Group 139.png" alt="" srcset="" class="project-img">
+                                </div>
+
+                                <p class="project-heading">Orphanage</p>
+                                <span class="price">300,300 <sup>Qar</sup></span>
+                                <span class="underline"></span>
+                                <div class="project-dimentions">
+                                    <div class="dimention">
+                                        <h3>Syria</h3>
+                                        <img src="./assets/icons/Group 241.png" alt="" srcset="">
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Space</h3>
+                                        <h2>100 <sup>m</sup></h2>
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Beneficiaries</h3>
+                                        <h2>1000</span></h2>
+                                    </div>
+
+                                </div>
+                                <div class="select">select the value</div>
+                                <div class="project-buy">
+                                    <div class="cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="done">
+                                        <button>Donation</button>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="card card-3  wow bounceInRight" data-wow-duration="3s" data-wow-delay="1s">
+                                <div class="header">
+                                    <p>Zakat Bank</p>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <p>Share</p>
+
+                                    </span>
+                                </div>
+                                <div class="img-div-project">
+                                    <img src="./assets/icons/001-mosque.png" alt="" srcset="" class="project-img">
+                                </div>
+
+                                <p class="project-heading">Orphanage</p>
+                                <span class="price">300,300 <sup>Qar</sup></span>
+                                <span class="underline"></span>
+                                <div class="project-dimentions">
+                                    <div class="dimention">
+                                        <h3>Syria</h3>
+                                        <img src="./assets/icons/Group 241.png" alt="" srcset="">
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Space</h3>
+                                        <h2>100 <sup>m</sup></h2>
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Beneficiaries</h3>
+                                        <h2>1000</span></h2>
+                                    </div>
+
+                                </div>
+                                <div class="select">select the value</div>
+                                <div class="project-buy">
+                                    <div class="cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="done">
+                                        <button>Donation</button>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                            <!-- card 4 -->
+                            <div class="card card-4  wow bounceInLeft" data-wow-duration="3s" data-wow-delay="1s">
+                                <div class="header">
+                                    <p>Zakat Bank</p>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <p>Share</p>
+
+                                    </span>
+                                </div>
+                                <div class="img-div-project">
+                                    <img src="./assets/icons/Group 145.png" alt="" srcset="" class="project-img">
+                                </div>
+
+                                <p class="project-heading">Orphanage</p>
+                                <span class="price">300,300 <sup>Qar</sup></span>
+                                <span class="underline"></span>
+                                <div class="project-dimentions">
+                                    <div class="dimention">
+                                        <h3>Syria</h3>
+                                        <img src="./assets/icons/Group 241.png" alt="" srcset="">
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Space</h3>
+                                        <h2>100 <sup>m</sup></h2>
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Beneficiaries</h3>
+                                        <h2>1000</span></h2>
+                                    </div>
+
+                                </div>
+                                <div class="select">select the value</div>
+                                <div class="project-buy">
+                                    <div class="cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="done">
+                                        <button>Donation</button>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                            <!-- card 5 -->
+                            <div class="card card-5  wow bounceInUp" data-wow-duration="3s" data-wow-delay="1s">
+                                <div class="header">
+                                    <p>Zakat Bank</p>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <p>Share</p>
+
+                                    </span>
+                                </div>
+                                <div class="img-div-project">
+                                    <img src="./assets/icons/Group 163.png" alt="" srcset="" class="project-img">
+                                </div>
+
+                                <p class="project-heading">Orphanage</p>
+                                <span class="price">300,300 <sup>Qar</sup></span>
+                                <span class="underline"></span>
+                                <div class="project-dimentions">
+                                    <div class="dimention">
+                                        <h3>Syria</h3>
+                                        <img src="./assets/icons/Group 241.png" alt="" srcset="">
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Space</h3>
+                                        <h2>100 <sup>m</sup></h2>
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Beneficiaries</h3>
+                                        <h2>1000</span></h2>
+                                    </div>
+
+                                </div>
+                                <div class="select">select the value</div>
+                                <div class="project-buy">
+                                    <div class="cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="done">
+                                        <button>Donation</button>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                            <!-- card 6 -->
+                            <div class="card card-6  wow bounceInRight" data-wow-duration="3s" data-wow-delay="1s">
+                                <div class="header">
+                                    <p>Zakat Bank</p>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        <p>Share</p>
+
+                                    </span>
+                                </div>
+                                <div class="img-div-project">
+                                    <img src="./assets/icons/Group 161.png" alt="" srcset="" class="project-img">
+                                </div>
+
+                                <p class="project-heading">Orphanage</p>
+                                <span class="price">300,300 <sup>Qar</sup></span>
+                                <span class="underline"></span>
+                                <div class="project-dimentions">
+                                    <div class="dimention">
+                                        <h3>Syria</h3>
+                                        <img src="./assets/icons/Group 241.png" alt="" srcset="">
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Space</h3>
+                                        <h2>100 <sup>m</sup></h2>
+                                    </div>
+                                    <div class="dimention">
+                                        <h3>Beneficiaries</h3>
+                                        <h2>1000</span></h2>
+                                    </div>
+
+                                </div>
+                                <div class="select">select the value</div>
+                                <div class="project-buy">
+                                    <div class="cart-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="done">
+                                        <button>Donation</button>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-camera"></i>
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sideCards  wow bounceInUp" data-wow-duration=".7s" data-wow-delay="1s">
+            <div class="sideCard">
+                <span>
+                    <img src="./assets/icons/Shape 20.png" alt="">
+
+                </span>
+                <p>FastDonate</p>
+            </div>
+            <div class="sideCard">
+                <span>
+                    <img src="./assets/icons/Shape 19.png" alt="">
+
+
+                </span>
+                <p>Emergancy</p>
+            </div>
+        </div>
+    </div>
+    <!-- start project -->
+
+    <!--  end project -->
+    <footer>
+
+        <div class="sm-container  footer">
+            <div class="myaccount">
+                <p>My Account</p>
+                <ul>
+                    <li><a href="">order</a></li>
+                    <li><a href="">shipping adress</a></li>
+                    <li><a href="">chart</a></li>
+                    <li><a href="">wish list</a></li>
+                </ul>
+            </div>
+            <div class="followUs">
+                <p>Folllow Us</p>
+                <div class="social-follow">
+                    <span><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span>
+                </div>
+                <div class="contact">
+                    <p>contact Us</p>
+                    <span>Email:info@insaniah.com</span><br>
+                    <span>phone:+974 2322 15545</span>
+                </div>
+            </div>
+
+            <div class="downloads">
+                <div class="card">
+                    <img src="./assets/icons/Group 117.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="./assets/icons/Group 119.png" alt="">
+                </div>
+
+            </div>
+            <div class="payment">
+                <p>PAYMENT METHOD</p>
+                <div class="payment-images">
+                    <a href="verifyPayment.html"><img src="./assets/icons/paypal-new-20232814.logowik.com.webp"
+                            alt=""></a>
+                    <a href="verifyPayment.html"><img src="./assets/icons/visa.svg" alt=""></a>
+                    <a href="verifyPayment.html"><img src="./assets/icons/MasterCard_Logo.svg.webp" alt=""></a>
+                    <a href="verifyPayment.html"><img src="./assets/icons/American_Express-Logo.wine.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <p>copyrigth &copy; 2023 insaniah Qatar</p>
+            <div class="di">
+                <a href="#">Terms and conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll(".toggleBtn").forEach((el, index1) => {
+            el.addEventListener("click", () => {
+                document.querySelectorAll(".listOfToggle1").forEach((el, index2) => {
+                    if (index1 == index2) {
+                        el.classList.toggle("showChoises");
+                    }
+                })
+            })
+        })
+    </script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

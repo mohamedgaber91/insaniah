@@ -1,0 +1,273 @@
+.services {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #d7d7d7;
+  background-image: url(../assets/icons/Group\ 2609.png);
+  position: relative;
+  background-position: center;
+  background-repeat: repeat;
+}
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.services .content .goods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30px;
+}
+
+.services .content .goods .serv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 119px;
+  height: 122px;
+  border-radius: 10%;
+  background-color: white;
+}
+.services .content .goods .serv span {
+  width: 53px;
+  height: 53px;
+  border-radius: 10%;
+  background-color: #fcf9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.services .content .goods .serv span img {
+  width: 45px;
+  height: 45px;
+}
+.services .content .goods .serv p {
+  color: rgb(87, 87, 87);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.services .content .goods .active {
+  background-color: var(--main-color);
+}
+.services .content .goods .active span {
+  background-color: white;
+}
+.services .content .goods .active p {
+  color: white;
+}
+
+/* side cards */
+.services .sideCards {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.services .sideCards .sideCard {
+  width: 100px;
+  height: 273px;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -7px 8px 11px 13px rgba(119, 118, 118, 0.1);
+}
+.services .sideCards .sideCard span {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #fdecd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .sideCards .sideCard p {
+  rotate: -90deg;
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 55px;
+}
+.services .content .budget {
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  height: 300px;
+}
+.services .content .budget .topSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -20px;
+}
+.services .content .budget p {
+  font-size: 25px;
+}
+.services .content .budget .topSide a {
+  display: block;
+  width: 48%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  box-shadow: -5px -1px 15px 2px rgb(160, 160, 160);
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.services .content .budget .topSide a div{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .content .budget .otherAmount {
+  margin-top: 50px;
+}
+.services .content .budget .topSide .active {
+  background-color: var(--main-color);
+  color: white;
+}
+.services .content .budget .downSide button {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  box-shadow: -5px -1px 15px 2px rgb(160, 160, 160);
+  margin: auto;
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+}
+
+@media (max-width: 816px) {
+  .sm-container{
+    width: 100%;
+  }
+  .services .content .budget {
+    width: 95%;
+    /* margin: auto; */
+  }
+  .services .content .budget .topSide a {
+    width: 100%;
+  }
+  .services .content .budget p {
+    margin-bottom: 47px;
+    text-align: center;
+  }
+}
+@media (max-width: 578px) {
+    .sm-container{
+    width: 100%;
+  }
+  .services .content .budget {
+    width: 95%;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .services .content .budget p {
+    font-size: 20px;
+  }
+  .services .content .budget .topSide {
+    display: block;
+  }
+  .services .content .budget .downSide {
+    display: block;
+  }
+  .services .content .budget .downSide button {
+    width: 100%;
+    margin: 10px 0;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 460px) {
+    .sm-container{
+    width: 100%;
+  }
+  .services .content .budget {
+    width: 95%;
+    padding: 0;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 280px) {
+    .sm-container{
+    width: 100%;
+  }
+  .services .content .budget {
+    width: 95%;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .services .content .budget .downSide button {
+    font-size: 8px;
+  }
+}
+@media (max-width: 820px) {
+    .sm-container{
+    width: 100%;
+  }
+  .services .sideCards {
+    display: none;
+  }
+  .services .content .goods .serv {
+    width: 70px;
+    height: 80px;
+  }
+  .services .content .goods .serv span {
+    width: 43px;
+    height: 43px;
+  }
+  .services .content .goods .serv span img {
+    width: 25px;
+    height: 25px;
+  }
+  .services .content .goods .serv p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .sm-container {
+    width: 95%;
+    margin: auto;
+  }
+  .services .content .goods {
+    gap: 15px;
+  }
+  .services .content .goods .serv {
+    width: 71px;
+    height: 73px;
+  }
+  .services .content .goods .serv span {
+    width: 37px;
+    height: 28px;
+  }
+}

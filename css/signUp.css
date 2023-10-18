@@ -1,0 +1,75 @@
+.content {
+  width: 100%;
+  background-image: url(../assets/002\ ceopy.jpg);
+  background-size: cover;
+  min-height: 115vh;
+  position: relative;
+}
+.content .form {
+  position: absolute;
+  width: 28%;
+  margin-left: 22%;
+  margin-top: 10%;
+}
+.content .form h3 {
+  font-size: 50px;
+  color: var(--main-color);
+}
+.content .form p {
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 10px;
+  color: var(--dark-color);
+  margin-bottom: -5px;
+}
+.content .form form {
+  margin-top: 30px;
+}
+.content .form .form-group {
+  margin-top: 15px;
+  width: 100%;
+  display: inline-block;
+}
+.content .form .form-group label {
+  display: block;
+}
+.content .form .form-group input {
+  width: 100%;
+  padding: 5px;
+}
+.content .form .firstName {
+  width: 45%;
+  margin-right: calc(100%-40%);
+}
+.content .form .lastName {
+  width: 53%;
+}
+.content .form .terms {
+  color: var(--main-color);
+  font-size: 18px;
+}
+.content .form .login {
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: var(--main-color);
+  width: 50%;
+  border: 0;
+  cursor: pointer;
+  padding: 5px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+@media (max-width: 821px) {
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  .content .form {
+    position: absolute;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+  }
+}
